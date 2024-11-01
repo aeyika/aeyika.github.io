@@ -416,3 +416,129 @@ section {
     color: #1e90ff;
 } 
 
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav .logo {
+        font-size: 1.5em;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    nav .bx-menu-alt-right {
+        display: block;
+    }
+
+    #home h1 {
+        font-size: 1.8em;
+    }
+
+    #home h3 {
+        font-size: 1em;
+    }
+
+    #home img {
+        width: 60vw;
+    }
+
+    #about .about-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+
+    #about .about-info img {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    #about .about-info h1 {
+        font-size: 3em;
+    }
+
+    #about .about-info p {
+        font-size: 0.9em;
+        padding: 0 1em;
+    }
+
+    #about .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    #about .skills ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+    }
+
+    #about .skills li {
+        font-size: 0.9em;
+    }
+
+    #services .header {
+        font-size: 2.5em;
+    }
+
+    .btn-box button {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-left, .col-right {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: rgba(0, 0, 0, 0.3); /* 30% opacity */
+        width: 100%;
+        text-align: center;
+    }
+
+    .links a {
+        padding: 0.5em 0;
+        color: white;
+        text-decoration: none;
+    }
+
+    #menu {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .links.open {
+        display: flex;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+
+
+
+
+

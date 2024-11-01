@@ -79,3 +79,11 @@ document.getElementById("faq-button").addEventListener("click", function(event) 
         behavior: "smooth"
     });
 });
+
+const menu = documnet.querySelector(`#menu`);
+const nav = document.querySelector(`.links`);
+
+menu.onClick = () => {
+    menu.classList.toggle(`bx-x`);
+    nav.classList.toggle(`active`);
+}
