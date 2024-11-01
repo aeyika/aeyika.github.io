@@ -80,10 +80,9 @@ document.getElementById("faq-button").addEventListener("click", function(event) 
     });
 });
 
-const menu = documnet.querySelector(`#menu`);
-const nav = document.querySelector(`.links`);
+const menuIcon = document.getElementById('menu');
+const navLinks = document.querySelector('.links');
 
-menu.onClick = () => {
-    menu.classList.toggle(`bx-x`);
-    nav.classList.toggle(`active`);
-}
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
